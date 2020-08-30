@@ -1,0 +1,800 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #eeeded;
+}
+.card {
+  height: 500px;
+  width: 500px;
+  border-radius: 2rem;
+  box-shadow: -15px -15px 15px 0 rgba(255, 255, 255, 1),
+    15px 15px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.card_header_main {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.card_header {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 250px;
+  border-radius: 0.5rem;
+  box-shadow: -5px -5px 5px 0 rgba(255, 255, 255, 1),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.card_header:hover {
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.2),
+    3px 3px 3px 0 rgba(255, 255, 255, 1);
+}
+.card_header > p {
+  font-weight: 100;
+  font-size: 2rem;
+  margin-top: -1px;
+}
+.card > img {
+  margin-left: 15px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: -5px -5px 5px 0 rgba(255, 255, 255, 1),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.paragraph_main {
+  margin-top: 20px;
+  position: absolute;
+  margin-left: 150px;
+  width: 340px;
+  border-radius: 1.5rem;
+  box-shadow: -5px -5px 5px 0 rgba(255, 255, 255, 1),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+.paragraph {
+  padding: 8px;
+  font-size: 1.5rem;
+}
+.about {
+  margin-top: 120px;
+  margin-left: 10px;
+  position: relative;
+  height: 40px;
+  width: 120px;
+  border-radius: 0.4rem;
+  margin-bottom: -50%;
+  box-shadow: -5px -5px 5px 0 rgba(255, 255, 255, 1),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.about > p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  padding-top: 4px !important;
+}
+.contact {
+  margin-top: 270px;
+  margin-left: 10px;
+  position: relative;
+  height: 40px;
+  width: 120px;
+  border-radius: 0.4rem;
+  margin-bottom: -50%;
+  box-shadow: -5px -5px 5px 0 rgba(255, 255, 255, 1),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.contact > p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  padding-top: 4px !important;
+}
+.project {
+  margin-top: 270px;
+  margin-left: 10px;
+  position: relative;
+  height: 40px;
+  width: 120px;
+  border-radius: 0.4rem;
+  margin-bottom: -50%;
+  box-shadow: -5px -5px 5px 0 rgba(255, 255, 255, 1),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.project > p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  padding-top: 4px !important;
+}
+.portfolio {
+  margin-top: 270px;
+  margin-left: 10px;
+  position: relative;
+  height: 40px;
+  width: 120px;
+  border-radius: 0.4rem;
+  margin-bottom: -50%;
+  box-shadow: -5px -5px 5px 0 rgba(255, 255, 255, 1),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.portfolio > p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  padding-top: 4px !important;
+}
+.about:hover {
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.2),
+    3px 3px 3px 0 rgba(255, 255, 255, 1);
+}
+.contact:hover {
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.2),
+    3px 3px 3px 0 rgba(255, 255, 255, 1);
+  transition: 0.6s;
+}
+.portfolio:hover {
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.2),
+    3px 3px 3px 0 rgba(255, 255, 255, 1);
+  transition: 0.6s;
+}
+.project:hover {
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.2),
+    3px 3px 3px 0 rgba(255, 255, 255, 1);
+  transition: 0.6s;
+}
+.active {
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.2),
+    3px 3px 3px 0 rgba(255, 255, 255, 1);
+}
+.footer_main {
+  margin-top: 285px;
+  display: flex;
+  justify-content: center;
+}
+.footer_theme {
+  margin-top: -28px;
+  display: flex;
+  justify-content: center;
+}
+.footer_link {
+  text-decoration: none;
+  color: rgb(29, 13, 255);
+}
+
+/* responsive design css */
+
+@media (min-device-width: 300px) and (max-device-width: 359px) {
+  body {
+    padding: 20px;
+  }
+  .card_header_main {
+    padding-top: 10px;
+  }
+  .card_header {
+    height: 30px;
+    width: 200px;
+  }
+  .card_header > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+  .card > img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .paragraph_main {
+    margin-left: 110px;
+    width: 42%;
+    border-radius: 1.1rem;
+  }
+  .paragraph {
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+  .about {
+    margin-top: 100px;
+    height: 25px;
+    width: 90px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .portfolio {
+    margin-top: 160px;
+    height: 25px;
+    width: 90px;
+  }
+  .portfolio > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .project {
+    margin-top: 160px;
+    height: 25px;
+    width: 90px;
+  }
+  .project > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .contact {
+    margin-top: 160px;
+    height: 25px;
+    width: 90px;
+  }
+  .contact > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .footer_main {
+    margin-top: 210px;
+  }
+  .footer_theme {
+    margin-top: -28px;
+  }
+  .footer_link {
+    text-decoration: none;
+    color: rgb(29, 13, 255);
+  }
+}
+
+@media (min-device-width: 360px) and (max-device-width: 379px) {
+  body {
+    padding: 20px;
+  }
+  .card_header_main {
+    padding-top: 10px;
+  }
+  .card_header {
+    height: 30px;
+    width: 200px;
+  }
+  .card_header > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+  .card > img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .paragraph_main {
+    margin-left: 110px;
+    width: 48%;
+    border-radius: 1.1rem;
+  }
+  .paragraph {
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+  .about {
+    margin-top: 100px;
+    height: 25px;
+    width: 90px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .portfolio {
+    margin-top: 180px;
+    height: 25px;
+    width: 90px;
+  }
+  .portfolio > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .project {
+    margin-top: 180px;
+    height: 25px;
+    width: 90px;
+  }
+  .project > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .contact {
+    margin-top: 180px;
+    height: 25px;
+    width: 90px;
+  }
+  .contact > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .footer_main {
+    margin-top: 265px;
+  }
+  .footer_theme {
+    margin-top: -28px;
+  }
+  .footer_link {
+    text-decoration: none;
+    color: rgb(29, 13, 255);
+  }
+}
+
+@media (min-width: 379px) and (max-width: 400px) {
+  body {
+    padding: 15px;
+  }
+  .card_header_main {
+    padding-top: 10px;
+  }
+  .card_header {
+    height: 30px;
+    width: 250px;
+  }
+  .card_header > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+  .card > img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .paragraph_main {
+    margin-left: 110px;
+    width: 55%;
+    border-radius: 1.1rem;
+  }
+  .paragraph {
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+  .about {
+    margin-top: 100px;
+    height: 25px;
+    width: 90px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .portfolio {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .portfolio > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .project {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .project > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .contact {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .contact > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .footer_main {
+    margin-top: 240px;
+  }
+  .footer_theme {
+    margin-top: -28px;
+  }
+  .footer_link {
+    text-decoration: none;
+    color: rgb(29, 13, 255);
+  }
+}
+@media (min-width: 401px) and (max-width: 420px) {
+  body {
+    padding: 15px;
+  }
+  .card_header_main {
+    padding-top: 10px;
+  }
+  .card_header {
+    height: 30px;
+    width: 250px;
+  }
+  .card_header > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+  .card > img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .paragraph_main {
+    margin-left: 110px;
+    width: 56%;
+    border-radius: 1.1rem;
+  }
+  .paragraph {
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+  .about {
+    margin-top: 100px;
+    height: 25px;
+    width: 90px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .portfolio {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .portfolio > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .project {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .project > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .contact {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .contact > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .footer_main {
+    margin-top: 260px;
+  }
+  .footer_theme {
+    margin-top: -28px;
+  }
+  .footer_link {
+    text-decoration: none;
+    color: rgb(29, 13, 255);
+  }
+}
+@media (min-width: 421px) and (max-width: 440px) {
+  body {
+    padding: 15px;
+  }
+  .card_header_main {
+    padding-top: 10px;
+  }
+  .card_header {
+    height: 30px;
+    width: 250px;
+  }
+  .card_header > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+  .card > img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .paragraph_main {
+    margin-left: 110px;
+    width: 57%;
+    border-radius: 1.1rem;
+  }
+  .paragraph {
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+  .about {
+    margin-top: 100px;
+    height: 25px;
+    width: 90px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .portfolio {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .portfolio > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .project {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .project > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .contact {
+    margin-top: 210px;
+    height: 25px;
+    width: 90px;
+  }
+  .contact > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .footer_main {
+    margin-top: 300px;
+  }
+  .footer_theme {
+    margin-top: -28px;
+  }
+  .footer_link {
+    text-decoration: none;
+    color: rgb(29, 13, 255);
+  }
+}
+@media (min-width: 441px) and (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+  .card_header_main {
+    padding-top: 10px;
+  }
+  .card_header {
+    height: 30px;
+    width: 250px;
+  }
+  .card_header > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+  .card > img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .paragraph_main {
+    margin-left: 110px;
+    width: 60%;
+    border-radius: 1.1rem;
+  }
+  .paragraph {
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+  .about {
+    margin-top: 100px;
+    height: 25px;
+    width: 90px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .portfolio {
+    margin-top: 230px;
+    height: 25px;
+    width: 90px;
+  }
+  .portfolio > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .project {
+    margin-top: 230px;
+    height: 25px;
+    width: 90px;
+  }
+  .project > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .contact {
+    margin-top: 230px;
+    height: 25px;
+    width: 90px;
+  }
+  .contact > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .footer_main {
+    margin-top: 310px;
+  }
+  .footer_theme {
+    margin-top: -28px;
+  }
+  .footer_link {
+    text-decoration: none;
+    color: rgb(29, 13, 255);
+  }
+}
+@media (min-width: 481px) and (max-width: 520px) {
+  body {
+    padding: 15px;
+  }
+  .card_header_main {
+    padding-top: 10px;
+  }
+  .card_header {
+    height: 30px;
+    width: 250px;
+  }
+  .card_header > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+  .card > img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .paragraph_main {
+    margin-left: 110px;
+    width: 66%;
+    border-radius: 1.1rem;
+  }
+  .paragraph {
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+  .about {
+    margin-top: 100px;
+    height: 25px;
+    width: 90px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .portfolio {
+    margin-top: 260px;
+    height: 25px;
+    width: 90px;
+  }
+  .portfolio > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .project {
+    margin-top: 260px;
+    height: 25px;
+    width: 90px;
+  }
+  .project > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .contact {
+    margin-top: 260px;
+    height: 25px;
+    width: 90px;
+  }
+  .contact > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .footer_main {
+    margin-top: 290px;
+  }
+  .footer_theme {
+    margin-top: -28px;
+  }
+  .footer_link {
+    text-decoration: none;
+    color: rgb(29, 13, 255);
+  }
+}
+@media (min-width: 521px) and (max-width: 607px) {
+  body {
+    padding: 15px;
+  }
+  .card_header_main {
+    padding-top: 10px;
+  }
+  .card_header {
+    height: 30px;
+    width: 250px;
+  }
+  .card_header > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 4px;
+  }
+  .card > img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .paragraph_main {
+    margin-left: 110px;
+    width: 62%;
+    border-radius: 1.1rem;
+  }
+  .paragraph {
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+  .about {
+    margin-top: 100px;
+    height: 25px;
+    width: 90px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .portfolio {
+    margin-top: 260px;
+    height: 25px;
+    width: 90px;
+  }
+  .portfolio > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .project {
+    margin-top: 260px;
+    height: 25px;
+    width: 90px;
+  }
+  .project > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .contact {
+    margin-top: 260px;
+    height: 25px;
+    width: 90px;
+  }
+  .contact > p {
+    font-size: 1.2rem;
+    padding-top: 2px !important;
+  }
+  .footer_main {
+    margin-top: 320px;
+  }
+  .footer_theme {
+    margin-top: -28px;
+  }
+  .footer_link {
+    text-decoration: none;
+    color: rgb(29, 13, 255);
+  }
+}
